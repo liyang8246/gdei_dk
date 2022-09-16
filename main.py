@@ -15,7 +15,7 @@ def dk(uid,pwd):
         opt.add_argument('--disable-dev-shm-usage')
         wd = webdriver.Chrome(service=Service(r'chromedriver'),chrome_options=opt)
     elif platform.system() == 'Windows':
-        wd = webdriver.Chrome(service=Service(r'chromedriver.exe'),chrome_options=opt)
+        wd = webdriver.Chrome(service=Service(r'.\chromedriver.exe'),chrome_options=opt)
     else:
         print('???')
     wd.get('https://tb.gdei.edu.cn/login')
